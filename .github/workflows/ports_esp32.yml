@@ -31,4 +31,4 @@ jobs:
       with:
         name: firmware  
         path: |
-          micropython/ports/esp32/build-ESP32_GENERIC/micropython.bin
+          path: /micropython/micropython/ports/esp32/build-ESP32_GENERIC/micropython.bin
