@@ -30,4 +30,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: firmware  
-        path: /build-ESP32_GENERIC/micropython.bin
+        path: /micropython.bin
