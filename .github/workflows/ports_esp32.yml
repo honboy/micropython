@@ -32,5 +32,3 @@ jobs:
         name: firmware  
         path: |
           micropython/ports/esp32/build-ESP32_GENERIC/micropython.bin
-          micropython/ports/esp32/build-ESP32_GENERIC/bootloader/bootloader.bin
-          micropython/ports/esp32/build-ESP32_GENERIC/partition_table/partition_table.bin
