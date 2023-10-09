@@ -31,6 +31,4 @@ jobs:
       with:
         name: firmware  
         path: |
-          #/home/runner/work/micropython/micropython/ports/esp32/build-ESP32_GENERIC/bootloader/bootloader.bin
           /home/runner/work/micropython/micropython/ports/esp32/build-ESP32_GENERIC/partition_table/partition_table.bin
-          #/home/runner/work/micropython/micropython/ports/esp32/build-ESP32_GENERIC/micropython.bin
