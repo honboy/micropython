@@ -29,11 +29,7 @@
 #include "py/builtin.h"
 
 const char esp32_help_text[] =
-    "Welcome to MicroPython on the ESP32!\n"
-    "\n"
-    "For online docs please visit http://docs.micropython.org/\n"
-    "\n"
-    "For access to the hardware use the 'machine' module:\n"
+    "Welcome to MicroPython on the ESP32 By Bohr!\n"
     "\n"
     "import machine\n"
     "pin12 = machine.Pin(12, machine.Pin.OUT)\n"
@@ -60,6 +56,5 @@ const char esp32_help_text[] =
     "  CTRL-D        -- on a blank line, do a soft reset of the board\n"
     "  CTRL-E        -- on a blank line, enter paste mode\n"
     "\n"
-    "For further help on a specific object, type help(obj)\n"
     "For a list of available modules, type help('modules')\n"
 ;
