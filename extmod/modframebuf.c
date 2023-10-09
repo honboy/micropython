@@ -805,7 +805,7 @@ STATIC mp_obj_t framebuf_text(size_t n_args, const mp_obj_t *args_in) {
         // get char data
         const uint8_t *chr_data = &font_petme128_6x8[(chr - 32) * 6];
         // loop over char data
-        for (int j = 0; j < 6; j++, x0++) {
+        for (int j = 0; j < 5; j++, x0++) {
             if (0 <= x0 && x0 < self->width) { // clip x
                 uint vline_data = chr_data[j]; // each byte is a column of 6 pixels, LSB at top
                 for (int y = y0; vline_data; vline_data >>= 1, y++) { // scan over vertical column
