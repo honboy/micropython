@@ -789,7 +789,7 @@ STATIC mp_obj_t framebuf_text(size_t n_args, const mp_obj_t *args_in) {
     mp_obj_framebuf_t *self = MP_OBJ_TO_PTR(args_in[0]);
     const char *str = mp_obj_str_get_str(args_in[1]);
     mp_int_t x0 = mp_obj_get_int(args_in[2]);
-    mp_int_t y0 = mp_obj_get_int(args_in[3]);
+    mp_int_t y0 = mp_obj_get_int(args_in[3])*8;
     mp_int_t col = 1;
     if (n_args >= 5) {
         col = mp_obj_get_int(args_in[4]);
@@ -805,6 +805,7 @@ STATIC mp_obj_t framebuf_text(size_t n_args, const mp_obj_t *args_in) {
         // get char data
         const uint8_t *chr_data = &font_petme128_6x8[(chr - 32) * 5];
         // loop over char data
+        x0++;
         for (int j = 0; j < 5; j++, x0++) {
             if (0 <= x0 && x0 < self->width) { // clip x
                 uint vline_data = chr_data[j]; // each byte is a column of 6 pixels, LSB at top
