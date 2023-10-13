@@ -803,7 +803,7 @@ STATIC mp_obj_t framebuf_text(size_t n_args, const mp_obj_t *args_in) {
             chr = 127;
         }
         // get char data
-        const uint8_t *chr_data = &font_petme128_6x8[(chr - 32) * 6];
+        const uint8_t *chr_data = &font_petme128_6x8[(chr - 32) * 5];
         // loop over char data
         for (int j = 0; j < 5; j++, x0++) {
             if (0 <= x0 && x0 < self->width) { // clip x
